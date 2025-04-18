@@ -1,6 +1,6 @@
 name: Accessibility Issue Report
 description: Report an accessibility issue on the website
-title: ""
+title: "Issue"
 labels: ["dev overheid"]
 body:
   - type: markdown
