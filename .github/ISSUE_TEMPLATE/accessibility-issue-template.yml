@@ -1,0 +1,90 @@
+name: Accessibility Issue Report
+description: Report an accessibility issue on the website
+title: ""
+labels: ["dev overheid"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an accessibility issue!
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Dit probleem kan op meerdere pagina's aanwezig zijn, waaronder:
+
+  - type: textarea
+    id: affected-pages
+    attributes:
+      label: Betrokken pagina's
+      description: Geef een lijst van betrokken pagina's
+      placeholder: |
+        [Developer Portal van de Nederlandse Overheid](https://don.apps.digilab.network/)
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Probleembeschrijving:
+
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Beschrijf het probleem
+      description: Geef een duidelijke en beknopte beschrijving van het probleem
+      placeholder:
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Referentiecode:
+
+  - type: textarea
+    id: reference-code
+    attributes:
+      label: Relevante code
+      description: Voeg relevante code toe indien beschikbaar
+      placeholder:
+      render: html
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Gerelateerde WCAG:
+
+  - type: input
+    id: wcag-reference
+    attributes:
+      label: WCAG-richtlijn
+      description: Voeg de relevante WCAG-richtlijn toe
+      placeholder: WCAG ...
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Referentieafbeelding:
+
+  - type: textarea
+    id: reference-image
+    attributes:
+      label: Voeg een afbeelding toe (indien relevant)
+      description: Sleep en zet een afbeelding neer of gebruik Markdown-syntax om een afbeelding toe te voegen
+      placeholder:
+    validations:
+      required: false
+
+  - type: input
+    id: reference-number
+    attributes:
+      label: Referentienummer
+      description: Voeg het referentienummer toe
+      placeholder:
+    validations:
+      required: false
